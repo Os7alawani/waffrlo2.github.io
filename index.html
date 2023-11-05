@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--
+    
+    Osama Halawani - 2037370
+    Hamed Fallatah - 2035900
+    Sultan Humusani - 2036377
+
+    Date: 5/11/2023 -->
+
+    <!-- We've added a video and a feedback form to this page. 
+        Additionally, we've placed the table on the settings page and applied a print style to it. -->
+
+    <!-- you can access all pages from this page using search bar except this pages:
+    Sitting Page, 
+    Sign In Page 
+    and Register Page. -->
+
+    <title>
+        Home Page
+    </title>
+
+    <meta name="description"
+        content="Here you can find all the offers and discounts organized in one place for Saudi Stores">
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Page header with logo and navigation links -->
+        <img id="logo" src="offer.png">
+        <nav>
+            <ul>
+                <li><a href="homePage.html">Home</a></li>
+                <li><a href="restaurantsPage.html">Restaurants</a></li>
+                <li><a href="cafesPage.html">Cafes</a></li>
+                <li><a href="storesPage.html">Stores</a></li>
+                <li><a href="eComPage.html">E-commerce</a></li>
+                <li><a href="whereTGPage.html">Where to go</a></li>
+
+                <li id="FB"><button href=""> Sign in </a></li>
+                <li><button href=""> Setting </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <section>
+        <!-- Page content section -->
+        <div id="searchContainer">
+            <!-- Search bar container -->
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search..." />
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+
+        <div id="abUsContainer">
+            <!-- About us section -->
+            <h1><u> About us </u> </h1>
+            <h3> Here you can find all the offers and discounts organized in one place
+                without having to waste your time searching in social media accounts
+                <blockquote> Our Vision </blockquote>
+                <q>Believe you can, and you're halfway there.</q>
+                <cite> Theodore Roosevelt </cite>
+            </h3>
+        </div>
+
+        <div id="videoContainer" style="text-align: center; margin-bottom: 2.5em;">
+            <video width="520" height="540" controls autoplay loop>
+                <source src="Untitled design.mp4" type="video/mp4">
+            </video>
+            <object width="520" height="530" data="https://www.youtube.com/v/diwf4UAQWyo">
+            </object>
+        </div>
+
+
+        <div id="CategoriesContainerHo">
+            <!-- Categories container for home page-->
+            <div class="categoryContainer">
+                <!-- Category and details section -->
+                <a class="category" href="cafesPage.html"><img src="cafe.png" alt=""></a>
+                <img class="detailHo" src="tim.jpeg" alt="">
+                <img class="detailHo" src="barns.jpeg" alt="">
+                <img class="detailHo" src="dunkin.jpeg" alt="">
+            </div>
+            <div class="categoryContainer">
+                <a class="category" href="restaurantsPage.html"><img src="resta.png" alt=""></a>
+                <img class="detailHo" src="shrimplus.jpeg" alt="">
+                <img class="detailHo" src="gamba.jpeg" alt="">
+                <img class="detailHo" src="subway.jpeg" alt="">
+            </div>
+            <div class="categoryContainer">
+                <a class="category" href="storesPage.html"><img src="shop.png" alt=""></a>
+                <img class="detailHo" src="jarir.png" alt="">
+                <img class="detailHo" src="extra.png" alt="">
+                <img class="detailHo" src="virgin.png" alt="">
+            </div>
+            <div class="categoryContainer">
+                <a class="category" href="eComPage.html"><img src="ecomm.png" alt=""></a>
+                <img class="detailHo" src="noon.png" alt="">
+                <img class="detailHo" src="namshi.png" alt="">
+                <img class="detailHo" src="amazon.png" alt="">
+            </div>
+        </div>
+
+        <form id="febaFo" method="post">
+            <h1>Feedback Form</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Feedback</legend>
+                <p>How satisfied are you with our web application?</p>
+                <div>
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                    <label>Satisfied</label>
+
+                    <br>
+                    <input type="radio" id="neutral" name="satisfaction" value="neutral">
+                    <label>Neutral</label>
+
+                    <br>
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                    <label>Dissatisfied</label>
+
+                </div>
+                <div>
+                    <p>What features would you like to see improved?</p>
+                    <input type="checkbox" id="feature1">
+                    <label>Design</label>
+                    <br>
+                    <input type="checkbox" id="feature2">
+                    <label>Usability</label>
+                    <br>
+                    <input type="checkbox" id="content">
+                    <label>Content</label>
+                </div>
+                <br>
+                <label>Select a Category for the improvment:</label>
+                <select id="category">
+                    <option value="Home page">Home page</option>
+                    <option value="Restaurants">Restaurants</option>
+                    <option value="Cafes">Cafes</option>
+                    <option value="Stores">Stores</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="where">Where to go </option>
+                </select>
+                <br><br>
+                <label>Additional Comments:</label>
+                <br>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                <br><br>
+                <button type="submit">Submit Feedback</button>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+    <footer>
+        <!-- Footer section with contact information -->
+        <p>Contact us</p>
+        <address>
+            <p>Email: <a href="mailto:waffrlo@gmail.com">waffrlo@gmail.com</a></p>
+            <p>Address: King Abdulaziz university, Jeddah, Saudi Arabia</p>
+        </address>
+    </footer>
+</body>
+
+</html>
